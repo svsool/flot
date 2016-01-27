@@ -2994,6 +2994,8 @@ Licensed under the MIT license.
         function drawOverlay() {
             redrawTimeout = null;
 
+            if (!octx) return;
+
             // draw highlights
             octx.save();
             overlay.clear();
